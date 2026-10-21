@@ -8,6 +8,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>26</maven.compiler.release>
-        <exec.mainClass>com.ejemplo.proyect_progra_ii.Proyect_progra_II</exec.mainClass>
+        <exec.mainClass>main.main_app</exec.mainClass>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.2</version> 
+        </dependency>
+    </dependencies>
 </project>

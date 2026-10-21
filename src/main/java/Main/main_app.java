@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.ejemplo.proyect_progra_ii;
+package Main;
 
 /**
  *
  * @author kevin
  */
-public class Proyect_progra_II {
+public class main_app {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
