@@ -8,7 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>26</maven.compiler.release>
-        <exec.mainClass>main.main_app</exec.mainClass>
+        <exec.mainClass>Main.main_app</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
