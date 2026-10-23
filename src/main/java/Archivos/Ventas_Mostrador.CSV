@@ -1,0 +1,21 @@
+id_venta,fecha,sucursal,codigo_producto,producto,cantidad,precio_unitario,vendedor
+VTA-1001,2026-01-10,Sucursal Central,ZAP-DEP-01,Tenis Running Pro,2,650.00,Juan Perez
+VTA-1002,2026-01-12,  sucursal norte ,ZAP-FOR-02,Zapato Formal Cuero,1,520.00,  ana gomez
+VTA-1003,2026-01-15,Sucursal Sur,ZAP-ESC-04,Zapato Escolar Negro,3,240.00,Luis Morales
+VTA-1004,2026-01-18,Plaza Oriente,ACC-LIM-06,Kit Limpiador de Calzado,5,45.00,Sofia Reyes
+VTA-1005,2026-01-20,SUCURSAL CENTRAL,ZAP-IND-03,Bota Industrial Punta Acero,2,850.00,Pedro Castillo
+VTA-1006,2026-01-22,Sucursal Norte,ZAP-CAS-05,Sandalia Casual,-2,150.00,Juan Perez
+VTA-1007,2026-02-02,Sucursal Sur,ZAP-DEP-01,  tenis running pro ,1,650.00,ANA GOMEZ
+VTA-1008,2026-02-05,Plaza Oriente,ZAP-FOR-02,Zapato Formal Cuero,2,0.00,Luis Morales
+VTA-1009,2026-02-10,Sucursal Central,ZAP-ESC-04,Zapato Escolar Negro,4,240.00,Sofia Reyes
+VTA-1010,2026-02-30,Sucursal Norte,ZAP-IND-03,Bota Industrial Punta Acero,1,850.00,Pedro Castillo
+VTA-1011,2026-02-14,  SUCURSAL SUR  ,ZAP-CAS-05,Sandalia Casual,3,150.00,Juan Perez
+VTA-1012,2026-02-18,,ACC-LIM-06,Kit Limpiador de Calzado,2,45.00,Ana Gomez
+VTA-1013,2026-02-20,Plaza Oriente,ZAP-DEP-01,Tenis Running Pro,1,650.00,  luis morales
+VTA-1014,2026-03-01,Sucursal Central,ZAP-FOR-02,Zapato Formal Cuero,2,520.00,Sofia Reyes
+VTA-1015,2026-03-03,Sucursal Norte,ZAP-IND-03,Bota Industrial Punta Acero,4,850.00,Pedro Castillo
+VTA-1016,2026-03-05,Sucursal Sur,ZAP-ESC-04,Zapato Escolar Negro,2,240.00,
+VTA-1017,2026-03-08,plaza oriente,ZAP-CAS-05,  SANDALIA CASUAL ,4,150.00,Juan Perez
+VTA-1018,2026-03-10,Sucursal Central,ACC-LIM-06,Kit Limpiador de Calzado,1,45.00,Ana Gomez
+VTA-1001,2026-01-10,Sucursal Central,ZAP-DEP-01,Tenis Running Pro,2,650.00,Juan Perez
+VTA-1020,2026-03-15,Sucursal Norte,ZAP-DEP-01,Tenis Running Pro,dos,650.00,Luis Morales

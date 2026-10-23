@@ -1,0 +1,202 @@
+[
+{
+"id_venta": "VTA-2001",
+"fecha": "2026-01-11",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-DEP-01",
+"producto": "Tenis Running Pro",
+"cantidad": 1,
+"precio_unitario": 650.00,
+"vendedor": "Sofia Reyes"
+},
+{
+"id_venta": "VTA-2002",
+"fecha": "2026-01-14",
+"sucursal": "  SUCURSAL NORTE  ",
+"codigo_producto": " zap-for-02 ",
+"producto": "Zapato Formal Cuero",
+"cantidad": 2,
+"precio_unitario": 520.00,
+"vendedor": "Pedro Castillo"
+},
+{
+"id_venta": "VTA-1003",
+"fecha": "2026-01-15",
+"sucursal": "Sucursal Sur",
+"codigo_producto": "ZAP-ESC-04",
+"producto": "Zapato Escolar Negro",
+"cantidad": 3,
+"precio_unitario": 240.00,
+"vendedor": "Luis Morales"
+},
+{
+"id_venta": "VTA-2004",
+"fecha": "2026-01-25",
+"sucursal": "Plaza Oriente",
+"codigo_producto": "ZAP-IND-03",
+"producto": "Bota Industrial Punta Acero",
+"cantidad": 3,
+"precio_unitario": 850.00,
+"vendedor": "  juan perez "
+},
+{
+"id_venta": "VTA-2005",
+"fecha": "2026-01-28",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-CAS-05",
+"producto": "Sandalia Casual",
+"cantidad": 0,
+"precio_unitario": 150.00,
+"vendedor": "Ana Gomez"
+},
+{
+"id_venta": "VTA-2006",
+"fecha": "2026-02-03",
+"sucursal": "sucursal sur",
+"codigo_producto": "ACC-LIM-06",
+"producto": "  kit limpiador de calzado ",
+"cantidad": 6,
+"precio_unitario": 45.00,
+"vendedor": "Luis Morales"
+},
+{
+"id_venta": "VTA-2007",
+"fecha": "2026-02-07",
+"sucursal": "Sucursal Norte",
+"codigo_producto": "ZAP-DEP-01",
+"producto": "Tenis Running Pro",
+"cantidad": 2,
+"precio_unitario": -650.00,
+"vendedor": "Sofia Reyes"
+},
+{
+"id_venta": "VTA-2008",
+"fecha": "2026-02-12",
+"sucursal": "Plaza Oriente",
+"codigo_producto": "ZAP-FOR-02",
+"producto": "Zapato Formal Cuero",
+"cantidad": 1,
+"precio_unitario": 520.00,
+"vendedor": "Pedro Castillo"
+},
+{
+"id_venta": "VTA-2009",
+"fecha": "2026-13-45",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-ESC-04",
+"producto": "Zapato Escolar Negro",
+"cantidad": 2,
+"precio_unitario": 240.00,
+"vendedor": "Juan Perez"
+},
+{
+"id_venta": "VTA-2010",
+"fecha": "2026-02-19",
+"sucursal": "Sucursal Sur",
+"codigo_producto": "",
+"producto": "Bota Industrial Punta Acero",
+"cantidad": 1,
+"precio_unitario": 850.00,
+"vendedor": "Ana Gomez"
+},
+{
+"id_venta": "VTA-2011",
+"fecha": "2026-02-22",
+"sucursal": "  Plaza Oriente ",
+"codigo_producto": "ZAP-CAS-05",
+"producto": "Sandalia Casual",
+"cantidad": 2,
+"precio_unitario": 150.00,
+"vendedor": "SOFIA REYES"
+},
+{
+"id_venta": "VTA-2012",
+"fecha": "2026-02-25",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-DEP-01",
+"producto": "Tenis Running Pro",
+"cantidad": 3,
+"precio_unitario": 650.00,
+"vendedor": "Pedro Castillo"
+},
+{
+"id_venta": "",
+"fecha": "2026-03-02",
+"sucursal": "Sucursal Norte",
+"codigo_producto": "ACC-LIM-06",
+"producto": "Kit Limpiador de Calzado",
+"cantidad": 4,
+"precio_unitario": 45.00,
+"vendedor": "Luis Morales"
+},
+{
+"id_venta": "VTA-2014",
+"fecha": "2026-03-06",
+"sucursal": "Sucursal Sur",
+"codigo_producto": "ZAP-FOR-02",
+"producto": "  ZAPATO FORMAL CUERO ",
+"cantidad": 2,
+"precio_unitario": 520.00,
+"vendedor": "Juan Perez"
+},
+{
+"id_venta": "VTA-2015",
+"fecha": "2026-03-09",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-IND-03",
+"producto": "Bota Industrial Punta Acero",
+"cantidad": 5,
+"precio_unitario": 850.00,
+"vendedor": "  pedro castillo "
+},
+{
+"id_venta": "VTA-2016",
+"fecha": "2026-03-11",
+"sucursal": "Sucursal Norte",
+"codigo_producto": "ZAP-ESC-04",
+"producto": "Zapato Escolar Negro",
+"cantidad": 2,
+"precio_unitario": 240.00,
+"vendedor": "Ana Gomez"
+},
+{
+"id_venta": "VTA-1009",
+"fecha": "2026-02-10",
+"sucursal": "Sucursal Central",
+"codigo_producto": "ZAP-ESC-04",
+"producto": "Zapato Escolar Negro",
+"cantidad": 4,
+"precio_unitario": 240.00,
+"vendedor": "Sofia Reyes"
+},
+{
+"id_venta": "VTA-2018",
+"fecha": "2026-03-14",
+"sucursal": "Plaza Oriente",
+"codigo_producto": "ACC-LIM-06",
+"producto": "Kit Limpiador de Calzado",
+"cantidad": 3,
+"precio_unitario": 45.00,
+"vendedor": "Luis Morales"
+},
+{
+"id_venta": "VTA-2019",
+"fecha": "2026-03-17",
+"sucursal": "  sucursal central ",
+"codigo_producto": "ZAP-CAS-05",
+"producto": "Sandalia Casual",
+"cantidad": 2,
+"precio_unitario": 150.00,
+"vendedor": "Sofia Reyes"
+},
+{
+"id_venta": "VTA-2020",
+"fecha": "2026-03-20",
+"sucursal": "Sucursal Sur",
+"codigo_producto": "ZAP-DEP-01",
+"producto": "",
+"cantidad": 1,
+"precio_unitario": 650.00,
+"vendedor": "Juan Perez"
+}
+]
