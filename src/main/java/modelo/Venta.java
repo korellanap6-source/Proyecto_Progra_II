@@ -1,25 +1,20 @@
-
+//archivo modelo para los datos que recivira el programa
 package modelo;
 
-import java.time.LocalDate;
 import java.math.BigDecimal;
 
 public class Venta {
-
     private String idVenta;
-    private LocalDate fecha;
+    private String fecha;
     private String sucursal;
     private String codigoProducto;
     private String producto;
     private int cantidad;
     private BigDecimal precioUnitario;
     private String vendedor;
-
-    public Venta() {
-    }
-
-    public Venta(String idVenta, LocalDate fecha, String sucursal, String codigoProducto, 
-                 String producto, int cantidad, BigDecimal precioUnitario, String vendedor) {
+    
+    public Venta(String idVenta, String fecha, String sucursal, String codigoProducto,
+                String producto, int cantidad, BigDecimal precioUnitario, String vendedor){
         this.idVenta = idVenta;
         this.fecha = fecha;
         this.sucursal = sucursal;
@@ -38,11 +33,11 @@ public class Venta {
         this.idVenta = idVenta;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -96,11 +91,8 @@ public class Venta {
 
     @Override
     public String toString() {
-        return "Venta{" +
-                "ID='" + idVenta + '\'' +
-                ", Fecha=" + fecha +
-                ", Sucursal='" + sucursal + '\'' +
-                ", Total=" + precioUnitario.multiply(new BigDecimal(cantidad)) +
-                '}';
+        return "Venta{" + "idVenta=" + idVenta + ", fecha=" + fecha + ", sucursal=" + sucursal + ", codigoProducto=" + codigoProducto + ", producto=" + producto + ", cantidad=" + cantidad + ", precioUnitario=" + precioUnitario + ", vendedor=" + vendedor + '}';
     }
+    
 }
+

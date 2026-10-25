@@ -1,35 +1,31 @@
-
+//archivo para registrar los datos con errores
 package modelo;
 
 public class ErrorRegistro {
-
-    private String archivoOrigen;
-    private String idOriginal;
+    private String ArchivoOrigen;
+    private String IdVenta;
     private String motivoRechazo;
-
-    public ErrorRegistro() {
-    }
     
-    public ErrorRegistro(String archivoOrigen, String idOriginal, String motivoRechazo) {
-        this.archivoOrigen = archivoOrigen;
-        this.idOriginal = idOriginal;
+    public ErrorRegistro(String ArchivoOrigen, String IdVenta, String motivoRechazo){
+        this.ArchivoOrigen = ArchivoOrigen;
+        this.IdVenta = IdVenta;
         this.motivoRechazo = motivoRechazo;
     }
 
     public String getArchivoOrigen() {
-        return archivoOrigen;
+        return ArchivoOrigen;
     }
 
-    public void setArchivoOrigen(String archivoOrigen) {
-        this.archivoOrigen = archivoOrigen;
+    public void setArchivoOrigen(String ArchivoOrigen) {
+        this.ArchivoOrigen = ArchivoOrigen;
     }
 
-    public String getIdOriginal() {
-        return idOriginal;
+    public String getIdVenta() {
+        return IdVenta;
     }
 
-    public void setIdOriginal(String idOriginal) {
-        this.idOriginal = idOriginal;
+    public void setIdVenta(String IdVenta) {
+        this.IdVenta = IdVenta;
     }
 
     public String getMotivoRechazo() {
@@ -39,13 +35,5 @@ public class ErrorRegistro {
     public void setMotivoRechazo(String motivoRechazo) {
         this.motivoRechazo = motivoRechazo;
     }
-
-    @Override
-    public String toString() {
-        return "ErrorRegistro{" +
-                "Archivo='" + archivoOrigen + '\'' +
-                ", ID='" + idOriginal + '\'' +
-                ", Motivo='" + motivoRechazo + '\'' +
-                '}';
-    }
+    
 }
