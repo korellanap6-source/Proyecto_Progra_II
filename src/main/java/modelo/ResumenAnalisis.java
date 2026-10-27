@@ -12,7 +12,7 @@ public class ResumenAnalisis {
         this.montoTotal = BigDecimal.ZERO;
     }
     
-    public void RegistrarVentaExitosa(Venta venta){
+    public void registrarVentaExitosa(Venta venta){
         this.totalRegistros++;
         
         this.montoTotal = this.montoTotal.add(venta.getPrecioUnitario());

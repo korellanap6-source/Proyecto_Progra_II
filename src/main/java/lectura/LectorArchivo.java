@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package lectura;
 
-/**
- *
- * @author kevin
- */
-public class LectorArchivo {
+import java.util.ArrayList;
+import modelo.ErrorRegistro;
+import modelo.ResumenAnalisis;
+
+public interface LectorArchivo {
+    void procesandoArchivo();
+    
+    ResumenAnalisis getResumen();
+    
+    ArrayList<ErrorRegistro> getListaErrores();
     
 }

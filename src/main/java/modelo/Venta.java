@@ -2,14 +2,18 @@
 package modelo;
 
 import java.math.BigDecimal;
+import com.google.gson.annotations.SerializedName;
 
 public class Venta {
+    @SerializedName("id_venta")
     private String idVenta;
     private String fecha;
     private String sucursal;
+    @SerializedName("codigo_producto")
     private String codigoProducto;
     private String producto;
     private int cantidad;
+    @SerializedName("precio_unitario")
     private BigDecimal precioUnitario;
     private String vendedor;
     
