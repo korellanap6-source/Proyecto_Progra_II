@@ -34,17 +34,21 @@ public class LectorXML implements LectorArchivo{
                     Element elementoVenta = (Element) nodoVenta;
                     //elemtos del arcivo
                     String idVenta = elementoVenta.getElementsByTagName("id_venta").item(0).getTextContent();
-                    String fecha = elementoVenta.getElementsByTagName("fecha").item(0).getTextContent();
-                    String sucursal = elementoVenta.getElementsByTagName("sucursal").item(0).getTextContent();
-                    String codigoProducto = elementoVenta.getElementsByTagName("codigo_producto").item(0).getTextContent();
-                    String producto = elementoVenta.getElementsByTagName("producto").item(0).getTextContent();
-                    int cantidad = Integer.parseInt(elementoVenta.getElementsByTagName("cantidad").item(0).getTextContent());
-                    BigDecimal precioUnitario = new BigDecimal(elementoVenta.getElementsByTagName("precio_unitario").item(0).getTextContent());
-                    String vendedor = elementoVenta.getElementsByTagName("vendedor").item(0).getTextContent();
-                    
-                    Venta nuevaVenta = new Venta(idVenta, fecha, sucursal ,codigoProducto,producto, cantidad, precioUnitario, vendedor);
-                    
-                    resumen.registrarVentaExitosa(nuevaVenta);
+                    try{
+                        String fecha = elementoVenta.getElementsByTagName("fecha").item(0).getTextContent();
+                        String sucursal = elementoVenta.getElementsByTagName("sucursal").item(0).getTextContent();
+                        String codigoProducto = elementoVenta.getElementsByTagName("codigo_producto").item(0).getTextContent();
+                        String producto = elementoVenta.getElementsByTagName("producto").item(0).getTextContent();
+                        int cantidad = Integer.parseInt(elementoVenta.getElementsByTagName("cantidad").item(0).getTextContent());
+                        BigDecimal precioUnitario = new BigDecimal(elementoVenta.getElementsByTagName("precio_unitario").item(0).getTextContent());
+                        String vendedor = elementoVenta.getElementsByTagName("vendedor").item(0).getTextContent();
+
+                        Venta nuevaVenta = new Venta(idVenta, fecha, sucursal ,codigoProducto,producto, cantidad, precioUnitario, vendedor);
+                        resumen.registrarVentaExitosa(nuevaVenta);
+                    }catch (Exception e) {
+                        ErrorRegistro error = new ErrorRegistro("Ventas_Mayoristas.XML", idVenta, "Dato invalido: " + e.getMessage());
+                        listaErrores.add(error);
+                    }
                 }
             }
         }catch (Exception e){

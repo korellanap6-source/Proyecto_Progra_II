@@ -1,17 +1,23 @@
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package Main;
 
-/**
- *
- * @author kevin
- */
-public class main_app {
+import lectura.LectorArchivo;
+import lectura.LectorCSV;
+import lectura.LectorJSON;
+import lectura.LectorXML;
 
+public class main_app {
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        
+        LectorArchivo lectorCsv = new LectorCSV();
+        lectorCsv.procesandoArchivo();
+        System.out.println("Registros CSV exitosos: " + lectorCsv.getResumen().getTotalRegistros());
+
+        LectorArchivo lectorJson = new LectorJSON();
+        lectorJson.procesandoArchivo();
+        System.out.println("Registros JSON exitosos: " + lectorJson.getResumen().getTotalRegistros());
+        
+        LectorArchivo lectorXml = new LectorXML();
+        lectorXml.procesandoArchivo();
+        System.out.println("Registros XML exitosos: " + lectorXml.getResumen().getTotalRegistros());
     }
 }
