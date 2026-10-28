@@ -13,11 +13,13 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+import validacion.ProcesadorVentas;
 
 
 public class LectorXML implements LectorArchivo{
     private ResumenAnalisis resumen = new ResumenAnalisis();
     private ArrayList<ErrorRegistro> listaErrores = new ArrayList<>();
+    private ProcesadorVentas procesador = new ProcesadorVentas();
     
     public void procesandoArchivo(){
         try{
@@ -44,6 +46,7 @@ public class LectorXML implements LectorArchivo{
                         String vendedor = elementoVenta.getElementsByTagName("vendedor").item(0).getTextContent();
 
                         Venta nuevaVenta = new Venta(idVenta, fecha, sucursal ,codigoProducto,producto, cantidad, precioUnitario, vendedor);
+                        procesador.procesarRegistro(nuevaVenta);
                         resumen.registrarVentaExitosa(nuevaVenta);
                     }catch (Exception e) {
                         ErrorRegistro error = new ErrorRegistro("Ventas_Mayoristas.XML", idVenta, "Dato invalido: " + e.getMessage());

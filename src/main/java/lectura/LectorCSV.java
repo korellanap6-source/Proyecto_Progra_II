@@ -8,10 +8,13 @@ import modelo.Venta;
 import modelo.ResumenAnalisis;
 import modelo.ErrorRegistro;
 import java.util.ArrayList;
+import validacion.ProcesadorVentas;
 
 public class LectorCSV implements LectorArchivo{
     private ResumenAnalisis resumen = new ResumenAnalisis();
     private ArrayList<ErrorRegistro> listaErrores = new ArrayList<>();
+    private ProcesadorVentas procesador = new ProcesadorVentas();
+    
         
     public void procesandoArchivo(){
         try{
@@ -34,6 +37,7 @@ public class LectorCSV implements LectorArchivo{
                         new BigDecimal(datos[6]), //precio_u
                         datos[7] //vendedor
                     );
+                    procesador.procesarRegistro(nuevaVenta);
                     resumen.registrarVentaExitosa(nuevaVenta);
                 } catch (Exception e){
                     //si ocurre un errror al leer eo archivo se ejecutar esto

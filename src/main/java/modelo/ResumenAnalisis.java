@@ -14,6 +14,8 @@ public class ResumenAnalisis {
     
     public void registrarVentaExitosa(Venta venta){
         this.totalRegistros++;
+        BigDecimal cantidadDecimal = new BigDecimal(venta.getCantidad());
+        BigDecimal subtotalVenta = venta.getPrecioUnitario().multiply(cantidadDecimal);
         
         this.montoTotal = this.montoTotal.add(venta.getPrecioUnitario());
     }

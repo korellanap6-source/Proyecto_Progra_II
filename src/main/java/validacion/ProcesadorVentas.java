@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package validacion;
 
-/**
- *
- * @author kevin
- */
+import java.util.HashSet;
+import java.util.Set;
+import modelo.Venta;
+import java.math.BigDecimal;
+
 public class ProcesadorVentas {
+    private Set<String> idsProcesados = new HashSet<>();
     
+    public void procesarRegistro(Venta venta) throws Exception {
+        venta.setSucursal(venta.getSucursal().trim().toUpperCase());
+        venta.setCodigoProducto(venta.getCodigoProducto().trim().toUpperCase());
+        venta.setProducto(venta.getProducto().trim().toUpperCase());
+        
+        if (venta.getCantidad() < 0){
+            throw new Exception("La cantidad no puede ser negativa");
+        }
+        if (venta.getPrecioUnitario().compareTo(BigDecimal.ZERO) < 0){
+            throw new Exception("El precio no puede ser negativo");
+        }
+        
+        if (idsProcesados.contains(venta.getIdVenta())){
+            throw new Exception("ID de venta duplicado");
+        } 
+        
+        idsProcesados.add(venta.getIdVenta());
+    }
 }
