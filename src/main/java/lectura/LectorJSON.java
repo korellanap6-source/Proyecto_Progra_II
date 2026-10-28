@@ -14,11 +14,10 @@ public class LectorJSON implements LectorArchivo{
     private ArrayList<ErrorRegistro> listaErrores = new ArrayList<>();
     private ProcesadorVentas procesador = new ProcesadorVentas();
         
-    public void procesandoArchivo(){
+    public void procesandoArchivo(String rutaArchivo){
         try{
             Gson gson = new Gson();
-            FileReader lector = new FileReader(
-                    "C:\\Users\\kevin\\Documents\\NetBeansProjects\\Proyecto_Progra_II\\src\\main\\java\\Archivos\\Ventas_Ecommerce.JSON");
+            FileReader lector = new FileReader(rutaArchivo);
             Venta [] ventas = gson.fromJson(lector, Venta[].class);
             for (Venta venta : ventas){
                 try{

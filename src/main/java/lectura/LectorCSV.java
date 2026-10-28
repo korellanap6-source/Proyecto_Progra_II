@@ -16,9 +16,9 @@ public class LectorCSV implements LectorArchivo{
     private ProcesadorVentas procesador = new ProcesadorVentas();
     
         
-    public void procesandoArchivo(){
+    public void procesandoArchivo(String rutaArchivo){
         try{
-            BufferedReader lector = new BufferedReader(new FileReader("C:\\Users\\kevin\\Documents\\NetBeansProjects\\Proyecto_Progra_II\\src\\main\\java\\Archivos\\Ventas_Mostrador.CSV"));
+            BufferedReader lector = new BufferedReader(new FileReader(rutaArchivo));
             lector.readLine();
             String linea;
             

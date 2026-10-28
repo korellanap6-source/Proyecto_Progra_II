@@ -6,7 +6,7 @@ import modelo.ErrorRegistro;
 import modelo.ResumenAnalisis;
 
 public interface LectorArchivo {
-    void procesandoArchivo();
+    void procesandoArchivo(String rutaArchivo);
     
     ResumenAnalisis getResumen();
     

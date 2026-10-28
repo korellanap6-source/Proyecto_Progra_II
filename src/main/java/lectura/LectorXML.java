@@ -21,9 +21,9 @@ public class LectorXML implements LectorArchivo{
     private ArrayList<ErrorRegistro> listaErrores = new ArrayList<>();
     private ProcesadorVentas procesador = new ProcesadorVentas();
     
-    public void procesandoArchivo(){
+    public void procesandoArchivo(String rutaArchivo){
         try{
-            File lector = new File("C:\\Users\\kevin\\Documents\\NetBeansProjects\\Proyecto_Progra_II\\src\\main\\java\\Archivos\\Ventas_Mayoristas.XML");
+            File lector = new File(rutaArchivo);
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             
