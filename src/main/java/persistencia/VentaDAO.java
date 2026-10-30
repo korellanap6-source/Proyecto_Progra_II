@@ -19,7 +19,6 @@ public class VentaDAO {
 
             for (Venta venta : ventas) {
                 pstmt.setString(1, venta.getIdVenta());
-                // Convertimos el String "YYYY-MM-DD" al formato Date que exige SQL
                 pstmt.setDate(2, java.sql.Date.valueOf(venta.getFecha()));
                 pstmt.setString(3, venta.getSucursal());
                 pstmt.setString(4, venta.getCodigoProducto());
