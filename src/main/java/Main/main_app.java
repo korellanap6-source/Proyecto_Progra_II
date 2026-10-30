@@ -91,16 +91,26 @@ public class main_app {
                             
                             System.out.println("\n--- FASE 3: Generación de Reportes ---");
                             AnalisisDAO analisisDao = new AnalisisDAO();
-                            
+
+                            int aceptados = todasVentasValidas.size();
+                            int rechazados = todosErrores.size();
+                            int totalRecibidos = aceptados + rechazados;
+                            long duplicados = todosErrores.stream().filter(e -> e.getMotivoRechazo().contains("duplicado")).count();
+                            double porcentajeRechazo = totalRecibidos == 0 ? 0 : (rechazados * 100.0) / totalRecibidos;
+
                             Map<String, BigDecimal> porSucursal = analisisDao.getVentasPorSucursal();
                             Map<String, BigDecimal> porVendedor = analisisDao.getVentasPorVendedor();
+                            Map<String, BigDecimal> top3Vendedores = analisisDao.getTop3Vendedores();
                             Map<String, Integer> topProductos = analisisDao.getProductosMasVendidos();
+                            Map<String, BigDecimal> porMes = analisisDao.getVentasPorMes();
+                            Map<String, BigDecimal> statsTransacciones = analisisDao.getEstadisticasTransacciones();
+                            Map<String, String> prodsExtremos = analisisDao.getProductosExtremos();
                             
                             GeneradorTxt generador = new GeneradorTxt();
                             String rutaReporte = rutaCarpeta + "\\reporte_analisis.txt";
                             String rutaErrores = rutaCarpeta + "\\bitacora_errores.txt";
-                            
-                            generador.generarReporteAnalisis(porSucursal, porVendedor, topProductos, rutaReporte);
+
+                            generador.generarReporteAnalisis(porSucursal, porVendedor, top3Vendedores, topProductos, porMes, statsTransacciones, prodsExtremos, aceptados, rechazados, totalRecibidos, duplicados, porcentajeRechazo, rutaReporte);
                             generador.generarReporteErrores(todosErrores, rutaErrores);
                         } else {
                             System.out.println("No se encontraron datos válidos ni errores para guardar.");
