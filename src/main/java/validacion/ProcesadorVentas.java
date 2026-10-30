@@ -14,6 +14,16 @@ public class ProcesadorVentas {
         venta.setCodigoProducto(venta.getCodigoProducto().trim().toUpperCase());
         venta.setProducto(venta.getProducto().trim().toUpperCase());
         
+        if (venta.getFecha() != null) {
+            venta.setFecha(venta.getFecha().trim());
+        }
+        
+        try {
+            java.sql.Date.valueOf(venta.getFecha());
+        } catch (IllegalArgumentException | NullPointerException e) {
+            throw new Exception("Formato de fecha inválido o inexistente: '" + venta.getFecha() + "'");
+        }
+        
         if (venta.getCantidad() < 0){
             throw new Exception("La cantidad no puede ser negativa");
         }
